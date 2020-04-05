@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>網上報名 Online Registration - 南方大學學院 Southern University College</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="formAssignment.css">
+	<script type="text/javascript" src="formAssignment.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<a href="https://www.southern.edu.my/home.html"><img src="SUC logo.png"></a>
+			<h1>網上報名 Online Registration</h1>
+		</div>
+		<div class="instruction">
+			<p>Instructions:</p>
+			<ol>
+				<li>This form contains five (5) parts, please fill out this form before submission.</li>
+				<li>The required fields are marked in asterisk (*).</li>
+				<li>Kindly please check and make sure contact informations are <strong>correct</strong>, our staff will use these information to get in touch with you.</li>
+				<li>No amendment is allowed after you submit your application.</li>
+			</ol>
+			<p>注意事項：</p>
+			<ol>
+				<li>這個報名表格共有五大項目，請仔细填寫。</li>
+				<li>必填資料已被標上星號（*）。</li>
+				<li>我们將會使用您所提供的聯絡方式與您聯絡，請確保聯絡資料<strong>正確無誤</strong>。</li>
+				<li>表格提交後將無法再修改所提交的資料。</li>
+			</ol>
+		</div>
+		<form name="registration" onsubmit="return formValidation()">
+			<div class="firstForm">
+				<div class="formHead">
+					<h2>1. 入學學期 & 資料 - Intake & Choices</h2>
+				</div>
+				<div class="formGroup">
+					<h3>申請入學梯次 - Intake and Programme</h3>
+					<p>請選擇入學年份和入学梯次。<br>Please select intake year and intake.</p>
+					<div class="flex">
+						<label for="intakeYear">入學年份與梯次 *<br>Year/Intake</label>
+						<div class="intakeChoice">
+							<input type="radio" name="intakeYear" value="2020/May">2020/May
+						</div>
+					</div>
+				</div>
+				<div class="formGroup">
+					<h3>申请科系 - Choice of Programme</h3>
+					<div class="flex">
+						<label for="firstChoice">第一志愿 *<br>1<sup>st</sup> Choice</label>
+						<div class="selection">
+							<select name="firstChoice">
+								<option selected="" value="Default">請選擇 - Click to choose</option>
+									<option value="">中文博士 Doctor of Philosophy (Chinese Studies)</option>
+									<option value="">中文文学硕士 Master of Arts in Chinese Studies</option>
+									<option value="">大众传播硕士 Master of Communication</option>
+									<option value="">会计（荣誉）学士学位 Bachelor in Accounting (Honours)</option>
+									<option value="">中文（荣誉）学士学位 Bachelor of Arts (Hons) in Chinese Studies</option>
+									<option value="">英文（荣誉）学士学位 Bachelor of Arts (Hons) English Language Teaching</option>
+									<option value="">马来文(荣誉)学士学位 Bachelor of Arts (Hons) in Malay Studies</option>
+									<option value="">企业管理(荣誉)学士学位 Bachelor of Business Administration (Honours)</option>
+									<option value="">金融与投资(荣誉)学士学位 Bachelor of Business Administration (Hons) in Finance & Investment</option>
+									<option value="">人力资源管理(荣誉)学士学位 Bachelor of Business Administration (Honours) in Human Resource Management</option>
+									<option value="">市场行销（荣誉）学士学位 Bachelor of Business Administration (Hons) in Marketing</option>
+									<option value="">旅游管理(荣誉)学士学位 Bachelor of Business Administration (Hons) in Tourism Management</option>
+									<option value="">大众传播（荣誉）学士学位 Bachelor of Communication (Hons) (Mass Communication)</option>
+									<option value="">电脑绘制（荣誉）学士学位 Bachelor of Design (Honours) Computer Graphic Design</option>
+									<option value="">工业设计（荣誉）学士学位 Bachelor of Design (Honours) Industrial Design</option>
+									<option value="">学前幼儿教育（荣誉）学士学位(MQA/PA5221) Bachelor of Early Childhood Education (Hons) (MQA/PA5221)</option>
+									<option value="">教育学（荣誉）学士学位（咨商与辅导）(MQA/PA8023) Bachelor of Education (Hons)(Guidance and Counselling) (MQA/PA8023)</option>
+									<option value="">教育（荣誉）学士学位（资讯科技与多媒体）(MQA/PA8001) Bachelor of Education (Hons)(Information Technology and Multimedia) (MQA/PA8001)</option>
+									<option value="">电子工程(荣誉)学士学位 Bachelor of Electronic Engineering with Honours</option>
+									<option value="">产业管理（荣誉）学士学位 Bachelor of Property Management (Honours)</option>
+									<option value="">心理学（荣誉）学士学位(MQA/PA5726) Bachelor of Psychology (Honours) (MQA/PA5726)</option>
+									<option value="">软件工程(荣誉)学士学位 Bachelor of Software Engineering (Hons)</option>
+									<option value="">中医药荣誉学士学位 Bachelor of Traditional Chinese Medicine (Hons)</option>
+									<option value="">会计专业文凭 Diploma in Accountancy</option>
+									<option value="">广告设计专业文凭 Diploma in Advertising Design</option>
+									<option value="">企业管理专业文凭 Diploma in Business Administration</option>
+									<option value="">中文专业文凭 Diploma in Chinese Studies</option>	
+									<option value="">电脑科学专业文凭 Diploma in Computer Science</option>
+									<option value="">学前幼儿教育专业文凭(MQA/A4430) Diploma in Early Childhood Education (MQA/A4430)</option>
+									<option value="">电机与电子工程专业文凭 Diploma in Electrical & Electronic Engineering</option>
+									<option value="">英文专业文凭 Diploma in English Studies</option>	
+									<option value="">金融分析专业文凭 Diploma in Financial Analysis</option>								
+									<option value="">工业设计专业文凭 Diploma in Industrial Design</option>
+									<option value="">资讯科技专业文凭 Diploma in Information Technology</option>
+									<option value="">国际贸易专业文凭 Diploma in International Business</option>
+									<option value="">新闻与传播专业文凭 Diploma in Journalism</option>
+									<option value="">物流管理专业文凭 Diploma in Logistics Management</option>
+									<option value="">市场行销专业文凭 Diploma in Marketing</option>
+									<option value="">多媒体专业文凭 Diploma in Multimedia Design</option>								
+									<option value="">旅游与酒店管理专业文凭 Diploma in Tourism Management</option>
+									<option value="">视觉艺术专业文凭 Diploma in Visual Art</option>
+									<option value="">文商科基础班 Foundation in Arts</option>
+									<option value="">理科基础班 Foundation in Science</option>
+									<option value="">中医预科课程 Foundation in Traditional Chinese Medicine</option>
+									<option value="">DKM电脑工程 Diploma Kemahiran Malaysia (DKM) in Computer System Engineering</option>
+									<option value="">美容与美体专业证书 Professional Certificate in Aesthetic Treatments and Body Therapy</option>
+									<option value="">咖啡师资格培训专业证书 Professional Certificate in Coffee Barista Skill</option>
+									<option value="">文化资产维护专业证书 Professional Certificate in Cultural Heritage Conservation</option>
+									<option value="">殡葬经营与管理专业证书 Professional Certificate in Funeral Business and Management</option>
+									<option value="">美发与发型设计专业证书 Professional Certificate in Hairdressing and Hair Design</option>
+									<option value="">直播与视觉营销专业证书课程 Professional Certificate in Live Streaming & Visual Marketing</option>
+									<option value="">应用程式开发专业文凭 Professional Diploma in Application Development</option>
+									<option value="">建筑管理专业行政文凭 Professional Diploma in Construction Management</option>
+									<option value="">游戏引擎与开发专业文凭 Professional Diploma in Game Engine and Development</option>
+									<option value="">珠宝鉴定与营销专业文凭 Professional Diploma in Gemstone Identification and Marketing</option>
+									<option value="">珠宝设计与加工专业文凭 Professional Diploma in Jewellery Design and Craftsmanship</option>
+									<option value="">演艺与数位音乐专业文凭 Professional Diploma in Performance & Digital Music</option>
+									<option value="">产后护理专业文凭 Professional Diploma in Postnatal Care</option>
+									<option value="">VR虚幻引擎建筑设计专业文凭 Professional Diploma in Unreal Engine VR Architecture</option>
+									<option value="">SKM电机与电子工程 Sijil Kemahiran Malaysia (SKM) in Electrical and Electronic Engineering</option>
+									<option value="">企业培训 Corporate Training</option>
+									<option value="">企业管理行政硕士课程 Executive MBA</option>
+									<option value="">终身学习证书班 Lifelong Learning Programme</option>
+							</select>
+						</div>
+					</div>
+					<div class="flex">
+						<label for="secondChoice">第二志愿 *<br>2<sup>nd</sup> Choice</label>
+						<div class="selection">
+							<select name="secondChoice">
+								<option selected="" value="Default">請選擇 - Click to choose</option>
+									<option value="">中文博士 Doctor of Philosophy (Chinese Studies)</option>
+									<option value="">中文文学硕士 Master of Arts in Chinese Studies</option>
+									<option value="">大众传播硕士 Master of Communication</option>
+									<option value="">会计（荣誉）学士学位 Bachelor in Accounting (Honours)</option>
+									<option value="">中文（荣誉）学士学位 Bachelor of Arts (Hons) in Chinese Studies</option>
+									<option value="">英文（荣誉）学士学位 Bachelor of Arts (Hons) English Language Teaching</option>
+									<option value="">马来文(荣誉)学士学位 Bachelor of Arts (Hons) in Malay Studies</option>
+									<option value="">企业管理(荣誉)学士学位 Bachelor of Business Administration (Honours)</option>
+									<option value="">金融与投资(荣誉)学士学位 Bachelor of Business Administration (Hons) in Finance & Investment</option>
+									<option value="">人力资源管理(荣誉)学士学位 Bachelor of Business Administration (Honours) in Human Resource Management</option>
+									<option value="">市场行销（荣誉）学士学位 Bachelor of Business Administration (Hons) in Marketing</option>
+									<option value="">旅游管理(荣誉)学士学位 Bachelor of Business Administration (Hons) in Tourism Management</option>
+									<option value="">大众传播（荣誉）学士学位 Bachelor of Communication (Hons) (Mass Communication)</option>
+									<option value="">电脑绘制（荣誉）学士学位 Bachelor of Design (Honours) Computer Graphic Design</option>
+									<option value="">工业设计（荣誉）学士学位 Bachelor of Design (Honours) Industrial Design</option>
+									<option value="">学前幼儿教育（荣誉）学士学位(MQA/PA5221) Bachelor of Early Childhood Education (Hons) (MQA/PA5221)</option>
+									<option value="">教育学（荣誉）学士学位（咨商与辅导）(MQA/PA8023) Bachelor of Education (Hons)(Guidance and Counselling) (MQA/PA8023)</option>
+									<option value="">教育（荣誉）学士学位（资讯科技与多媒体）(MQA/PA8001) Bachelor of Education (Hons)(Information Technology and Multimedia) (MQA/PA8001)</option>
+									<option value="">电子工程(荣誉)学士学位 Bachelor of Electronic Engineering with Honours</option>
+									<option value="">产业管理（荣誉）学士学位 Bachelor of Property Management (Honours)</option>
+									<option value="">心理学（荣誉）学士学位(MQA/PA5726) Bachelor of Psychology (Honours) (MQA/PA5726)</option>
+									<option value="">软件工程(荣誉)学士学位 Bachelor of Software Engineering (Hons)</option>
+									<option value="">中医药荣誉学士学位 Bachelor of Traditional Chinese Medicine (Hons)</option>
+									<option value="">会计专业文凭 Diploma in Accountancy</option>
+									<option value="">广告设计专业文凭 Diploma in Advertising Design</option>
+									<option value="">企业管理专业文凭 Diploma in Business Administration</option>
+									<option value="">中文专业文凭 Diploma in Chinese Studies</option>	
+									<option value="">电脑科学专业文凭 Diploma in Computer Science</option>
+									<option value="">学前幼儿教育专业文凭(MQA/A4430) Diploma in Early Childhood Education (MQA/A4430)</option>
+									<option value="">电机与电子工程专业文凭 Diploma in Electrical & Electronic Engineering</option>
+									<option value="">英文专业文凭 Diploma in English Studies</option>	
+									<option value="">金融分析专业文凭 Diploma in Financial Analysis</option>								
+									<option value="">工业设计专业文凭 Diploma in Industrial Design</option>
+									<option value="">资讯科技专业文凭 Diploma in Information Technology</option>
+									<option value="">国际贸易专业文凭 Diploma in International Business</option>
+									<option value="">新闻与传播专业文凭 Diploma in Journalism</option>
+									<option value="">物流管理专业文凭 Diploma in Logistics Management</option>
+									<option value="">市场行销专业文凭 Diploma in Marketing</option>
+									<option value="">多媒体专业文凭 Diploma in Multimedia Design</option>								
+									<option value="">旅游与酒店管理专业文凭 Diploma in Tourism Management</option>
+									<option value="">视觉艺术专业文凭 Diploma in Visual Art</option>
+									<option value="">文商科基础班 Foundation in Arts</option>
+									<option value="">理科基础班 Foundation in Science</option>
+									<option value="">中医预科课程 Foundation in Traditional Chinese Medicine</option>
+									<option value="">DKM电脑工程 Diploma Kemahiran Malaysia (DKM) in Computer System Engineering</option>
+									<option value="">美容与美体专业证书 Professional Certificate in Aesthetic Treatments and Body Therapy</option>
+									<option value="">咖啡师资格培训专业证书 Professional Certificate in Coffee Barista Skill</option>
+									<option value="">文化资产维护专业证书 Professional Certificate in Cultural Heritage Conservation</option>
+									<option value="">殡葬经营与管理专业证书 Professional Certificate in Funeral Business and Management</option>
+									<option value="">美发与发型设计专业证书 Professional Certificate in Hairdressing and Hair Design</option>
+									<option value="">直播与视觉营销专业证书课程 Professional Certificate in Live Streaming & Visual Marketing</option>
+									<option value="">应用程式开发专业文凭 Professional Diploma in Application Development</option>
+									<option value="">建筑管理专业行政文凭 Professional Diploma in Construction Management</option>
+									<option value="">游戏引擎与开发专业文凭 Professional Diploma in Game Engine and Development</option>
+									<option value="">珠宝鉴定与营销专业文凭 Professional Diploma in Gemstone Identification and Marketing</option>
+									<option value="">珠宝设计与加工专业文凭 Professional Diploma in Jewellery Design and Craftsmanship</option>
+									<option value="">演艺与数位音乐专业文凭 Professional Diploma in Performance & Digital Music</option>
+									<option value="">产后护理专业文凭 Professional Diploma in Postnatal Care</option>
+									<option value="">VR虚幻引擎建筑设计专业文凭 Professional Diploma in Unreal Engine VR Architecture</option>
+									<option value="">SKM电机与电子工程 Sijil Kemahiran Malaysia (SKM) in Electrical and Electronic Engineering</option>
+									<option value="">企业培训 Corporate Training</option>
+									<option value="">企业管理行政硕士课程 Executive MBA</option>
+									<option value="">终身学习证书班 Lifelong Learning Programme</option>
+							</select>
+						</div>
+					</div>
+					<div class="flex">
+						<label for="thirdChoice">第三志愿 *<br>3<sup>rd</sup> Choice</label>
+						<div class="selection">
+							<select name="thirdChoice">
+								<option selected="" value="Default">請選擇 - Click to choose</option>
+									<option value="">中文博士 Doctor of Philosophy (Chinese Studies)</option>
+									<option value="">中文文学硕士 Master of Arts in Chinese Studies</option>
+									<option value="">大众传播硕士 Master of Communication</option>
+									<option value="">会计（荣誉）学士学位 Bachelor in Accounting (Honours)</option>
+									<option value="">中文（荣誉）学士学位 Bachelor of Arts (Hons) in Chinese Studies</option>
+									<option value="">英文（荣誉）学士学位 Bachelor of Arts (Hons) English Language Teaching</option>
+									<option value="">马来文(荣誉)学士学位 Bachelor of Arts (Hons) in Malay Studies</option>
+									<option value="">企业管理(荣誉)学士学位 Bachelor of Business Administration (Honours)</option>
+									<option value="">金融与投资(荣誉)学士学位 Bachelor of Business Administration (Hons) in Finance & Investment</option>
+									<option value="">人力资源管理(荣誉)学士学位 Bachelor of Business Administration (Honours) in Human Resource Management</option>
+									<option value="">市场行销（荣誉）学士学位 Bachelor of Business Administration (Hons) in Marketing</option>
+									<option value="">旅游管理(荣誉)学士学位 Bachelor of Business Administration (Hons) in Tourism Management</option>
+									<option value="">大众传播（荣誉）学士学位 Bachelor of Communication (Hons) (Mass Communication)</option>
+									<option value="">电脑绘制（荣誉）学士学位 Bachelor of Design (Honours) Computer Graphic Design</option>
+									<option value="">工业设计（荣誉）学士学位 Bachelor of Design (Honours) Industrial Design</option>
+									<option value="">学前幼儿教育（荣誉）学士学位(MQA/PA5221) Bachelor of Early Childhood Education (Hons) (MQA/PA5221)</option>
+									<option value="">教育学（荣誉）学士学位（咨商与辅导）(MQA/PA8023) Bachelor of Education (Hons)(Guidance and Counselling) (MQA/PA8023)</option>
+									<option value="">教育（荣誉）学士学位（资讯科技与多媒体）(MQA/PA8001) Bachelor of Education (Hons)(Information Technology and Multimedia) (MQA/PA8001)</option>
+									<option value="">电子工程(荣誉)学士学位 Bachelor of Electronic Engineering with Honours</option>
+									<option value="">产业管理（荣誉）学士学位 Bachelor of Property Management (Honours)</option>
+									<option value="">心理学（荣誉）学士学位(MQA/PA5726) Bachelor of Psychology (Honours) (MQA/PA5726)</option>
+									<option value="">软件工程(荣誉)学士学位 Bachelor of Software Engineering (Hons)</option>
+									<option value="">中医药荣誉学士学位 Bachelor of Traditional Chinese Medicine (Hons)</option>
+									<option value="">会计专业文凭 Diploma in Accountancy</option>
+									<option value="">广告设计专业文凭 Diploma in Advertising Design</option>
+									<option value="">企业管理专业文凭 Diploma in Business Administration</option>
+									<option value="">中文专业文凭 Diploma in Chinese Studies</option>	
+									<option value="">电脑科学专业文凭 Diploma in Computer Science</option>
+									<option value="">学前幼儿教育专业文凭(MQA/A4430) Diploma in Early Childhood Education (MQA/A4430)</option>
+									<option value="">电机与电子工程专业文凭 Diploma in Electrical & Electronic Engineering</option>
+									<option value="">英文专业文凭 Diploma in English Studies</option>	
+									<option value="">金融分析专业文凭 Diploma in Financial Analysis</option>								
+									<option value="">工业设计专业文凭 Diploma in Industrial Design</option>
+									<option value="">资讯科技专业文凭 Diploma in Information Technology</option>
+									<option value="">国际贸易专业文凭 Diploma in International Business</option>
+									<option value="">新闻与传播专业文凭 Diploma in Journalism</option>
+									<option value="">物流管理专业文凭 Diploma in Logistics Management</option>
+									<option value="">市场行销专业文凭 Diploma in Marketing</option>
+									<option value="">多媒体专业文凭 Diploma in Multimedia Design</option>								
+									<option value="">旅游与酒店管理专业文凭 Diploma in Tourism Management</option>
+									<option value="">视觉艺术专业文凭 Diploma in Visual Art</option>
+									<option value="">文商科基础班 Foundation in Arts</option>
+									<option value="">理科基础班 Foundation in Science</option>
+									<option value="">中医预科课程 Foundation in Traditional Chinese Medicine</option>
+									<option value="">DKM电脑工程 Diploma Kemahiran Malaysia (DKM) in Computer System Engineering</option>
+									<option value="">美容与美体专业证书 Professional Certificate in Aesthetic Treatments and Body Therapy</option>
+									<option value="">咖啡师资格培训专业证书 Professional Certificate in Coffee Barista Skill</option>
+									<option value="">文化资产维护专业证书 Professional Certificate in Cultural Heritage Conservation</option>
+									<option value="">殡葬经营与管理专业证书 Professional Certificate in Funeral Business and Management</option>
+									<option value="">美发与发型设计专业证书 Professional Certificate in Hairdressing and Hair Design</option>
+									<option value="">直播与视觉营销专业证书课程 Professional Certificate in Live Streaming & Visual Marketing</option>
+									<option value="">应用程式开发专业文凭 Professional Diploma in Application Development</option>
+									<option value="">建筑管理专业行政文凭 Professional Diploma in Construction Management</option>
+									<option value="">游戏引擎与开发专业文凭 Professional Diploma in Game Engine and Development</option>
+									<option value="">珠宝鉴定与营销专业文凭 Professional Diploma in Gemstone Identification and Marketing</option>
+									<option value="">珠宝设计与加工专业文凭 Professional Diploma in Jewellery Design and Craftsmanship</option>
+									<option value="">演艺与数位音乐专业文凭 Professional Diploma in Performance & Digital Music</option>
+									<option value="">产后护理专业文凭 Professional Diploma in Postnatal Care</option>
+									<option value="">VR虚幻引擎建筑设计专业文凭 Professional Diploma in Unreal Engine VR Architecture</option>
+									<option value="">SKM电机与电子工程 Sijil Kemahiran Malaysia (SKM) in Electrical and Electronic Engineering</option>
+									<option value="">企业培训 Corporate Training</option>
+									<option value="">企业管理行政硕士课程 Executive MBA</option>
+									<option value="">终身学习证书班 Lifelong Learning Programme</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="formGroup">
+					<h3>申请住宿 - Hostel</h3>
+					<div class="flex">
+						<label for="hostel">申请住宿 *<br>Hostel</label>
+						<div class="hostelChoice">
+							<input type="radio" name="yhostel" value="yes">是 Yes
+							<input type="radio" name="nhostel" value="no">否 No
+						</div>
+					</div>
+				</div>
+				<div class="formFoot">
+					<h3>獎貸申请 - Scholarship</h3>
+					<div class="flex">
+						<label for="scholarship">獎貸申请<br>Scholarship</label>
+						<div class="selection">
+							<select name="scholarship">
+								<option selected="" value="None">无 - None</option>
+                                    <option value="Deg">大學學士文憑獎學金 - Degree Scholarship</option>
+                                    <option value="Dip">大學專業文憑獎學金 - Diploma Scholarship</option>
+                                    <option value="Fou">大學基礎文憑獎學金 - Foundation Scholarship</option>
+                                    <option value="ExCo">課外活動優異獎學金 - Excellent Co-curriculum Scholarship</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="secondForm">
+				<div class="formHead">
+					<h2>2. 個人資料 - Personal Information</h2>
+				</div>
+				<div class="formContent">
+					<div class="flex">
+						<label for="chineseName">中文姓名<br>Chinese Name</label>
+						<div class="blank">
+							<input type="text" name="chineseName" size="10">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="englishName">英文姓名 *<br>English Name</label>
+						<div class="blank">
+							<input type="text" name="englishName" size="50">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="gender">性別 *<br>Gender</label>
+						<div class="genderChoice">
+							<input type="radio" name="mgender" value="male">男 Male
+							<input type="radio" name="fgender" value="female">女 Female
+						</div>
+					</div>
+					<div class="flex">
+						<label for="dateOfBirth">出生日期 *<br>Date of Birth</label>
+						<div class="blank">
+							<input type="text" name="dateOfBirth" placeholder="dd-mm-yyyy" size="12">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="nationality">國籍 *<br>Nationality</label>
+						<div class="blank">
+							<input type="text" name="nationality" size="30">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="identityNo">身份證件號/護照號碼 *<br>NRIC No./Passport No.</label>
+						<div class="blank">
+							<input type="text" name="identityNo" size="30">
+						</div>	
+					</div>
+					<div class="flex">
+						<label for="race">種族 *<br>Race</label>
+						<div class="selection">
+							<select name="race">
+								<option selected="" value="Default">請選擇 - Click to choose</option>
+									<option value="Mal">馬來族 - Malay</option>
+									<option value="Chi">華族 - Chinese</option>
+									<option value="Ind">印度族 - Indian</option>
+									<option value="Oth">其他 - Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="flex">
+						<label for="religion">宗教 *<br>Religion</label>
+						<div class="selection">
+							<select name="religion">
+								<option selected="" value="Default">請選擇 - Click to choose</option>
+									<option value="None">無 - None</option>
+									<option value="Bud">佛教 - Buddhism</option>
+                              		<option value="Tao">道教 - Taoism</option>
+                              		<option value="Chr">基督教 - Christianity</option>
+                              		<option value="Cat">天主教 - Catholic</option>
+                              		<option value="Isl">回教 - Islam</option>
+                              		<option value="Hin">印度教 - Hinduism</option>
+                              		<option value="Oth">其他 - Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="flex">
+						<label for="homePhoneNumber">住家電話<br>Home Phone Number</label>
+						<div class="blank">
+							<input type="text" name="homePhoneNumber" size="20">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="mobileNumber">手提電話 *<br>Mobile Number</label>
+						<div class="blank">
+							<input type="text" name="mobileNumber" size="20">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="eMail">電郵 *<br>E-Mail</label>
+						<div class="blank">
+							<input type="text" name="eMail" size="50">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="address">住家地址 *<br>Address</label>
+						<div class="blank">
+							<input type="text" name="address" size="255">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="area">地區 *<br>Area</label>
+						<div class="blank">
+							<input type="text" name="area" size="50">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="postcode">郵編 *<br>Postcode</label>
+						<div class="blank">
+							<input type="text" name="postcode" size="5">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="state">州屬 *<br>State</label>
+						<div class="selection">
+							<select name="state">
+								<option selected="" value="Default">請選擇 - Click to choose</option>
+									<option value="Joh">柔佛州 - Johor</option>
+    	                      		<option value="Ked">吉打州 - Kedah</option>
+        	                  		<option value="Kel">吉蘭丹州 - Kelantan</option>
+            	              		<option value="Lum">吉隆坡 - Kuala Lumpur</option>
+                	          		<option value="Lab">納閩 - Labuan</option>
+                    	      		<option value="Mel">馬六甲州 - Melaka</option>
+                        	  		<option value="Sem">森美蘭州 - Negeri Sembilan</option>
+                          			<option value="Pah">彭亨州 - Pahang</option>
+                          			<option value="Prk">霹靂州 - Perak</option>
+    	                      		<option value="Per">玻璃市州 - Perlis</option>
+	                          		<option value="Pen">檳城州 - Pulau Penang</option>
+        	                  		<option value="Put">布城 - Putra Jaya</option>
+            	              		<option value="Sab">沙巴州 - Sabah</option>
+                	          		<option value="Sar">砂拉越州 - Sarawak</option>
+                    	      		<option value="Sel">雪蘭莪州 - Selangor</option>
+                        	  		<option value="Ter">登嘉樓州 - Terengganu</option>
+                        	</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="thirdForm">
+				<div class="formHead">
+					<h2>3. 家庭資料 - Family Details</h2>
+				</div>
+				<div class="formContent">
+					<div class="flex">
+						<label for="familyChineseName">中文姓名<br>Chinese Name</label>
+						<div class="blank">
+							<input type="text" name="familyChineseName" size="10">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="familyEnglishName">英文姓名 *<br>English Name</label>
+						<div class="blank">
+							<input type="text" name="familyEnglishName" size="50">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="familyIdentityNo">身份證件號/護照號碼 *<br>NRIC No./Passport No.</label>
+						<div class="blank">
+							<input type="text" name="familyIdentityNo" size="20">
+						</div>	
+					</div>
+					<div class="flex">
+						<label for="phoneNumber">聯絡電話 *<br>Phone Number</label>
+						<div class="blank">
+							<input type="text" name="phoneNumber" size="20">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="relationship">關係 *<br>Relationship</label>
+						<div class="selection">
+							<select name="relationship">
+								<option selected="" value="Default">請選擇 - Click to choose</option>
+									<option value="FnS">父子 - Father and Son</option>
+        	                        <option value="FnD">父女 - Father and Daughter</option>
+            	                    <option value="MnS">母子 - Mother and Son</option>
+                	                <option value="MnD">母女 - Mother and Daughter</option>
+                    	            <option value="Bro">兄弟 - Brothers</option>
+                        	        <option value="BnS">兄妹 - Brother and Younger Sister</option>
+                            	    <option value="SnB">姐弟 - Sister and Younger Brother</option>
+                                	<option value="Sis">姐妹 - Sisters</option>
+	                                <option value="Rel">親戚 - Relatives</option>
+    	                            <option value="HnW">夫妻 - Husband and Wife</option>
+        	                        <option value="Fri">朋友 - Friends</option>
+                            </select>
+						</div>
+					</div>
+					<div class="flex">
+						<label for="income">家庭年收入 *<br>Household Annual Income</label>
+						<div class="selection">
+							<select name="income">
+								<option selected="" value="Default">請選擇 - Click to choose</option>
+									<option value="0">Less than RM10, 000</option>
+    	          					<option value="10">RM 10, 000 to RM 29, 999</option>
+        	      					<option value="30">RM 30, 000 to RM 49, 999</option>
+            	  					<option value="50">RM 50, 000 to RM 69, 999</option>
+              						<option value="70">RM 70, 000 or more</option>
+              				</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fourthForm">
+				<div class="formHead">
+					<h2>4. 學歷 - Academic Qualification</h2>
+				</div>
+				<div class="formContent">
+					<div class="flex">
+						<label for="secondarySchool">中學 *<br>Secondary School</label>
+						<div class="blank">
+							<div class="academic">
+								<input type="text" name="secondarySchoolPlace" placeholder="請輸入學校州屬 Please enter institute state" size="50">
+							</div>
+							<div class="academic">
+								<input type="text" name="secondarySchoolName" placeholder="請輸入學校名字 Please enter institute name" size="50">
+							</div>
+							<div class="academic">
+								<input type="text" name="secondarySchoolYear" placeholder="請輸入畢業年份 Please enter graduate year" size="4">
+							</div>
+						</div>
+					</div>
+					<div class="flex">
+						<label for="higherInstitution">大專<br>Higher Institution</label>
+						<div class="blank">
+							<div class="academic">
+								<input type="text" name="higherInstitutionPlace" placeholder="請輸入學校州屬 Please enter institute state" size="50">
+							</div>
+							<div class="academic">
+								<input type="text" name="higherInstitutionName" placeholder="請輸入學校名字 Please enter institute name" size="50">
+							</div>
+							<div class="academic">
+								<input type="text" name="higherInstitutionYear" placeholder="請輸入畢業年份 Please enter graduate year" size="4">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fifthForm">
+				<div class="formHead">
+					<h2>5. 入學成績 - Certificate & Grades</h2>
+				</div>
+				<div class="formContent">
+					<div class="flex">
+						<label for="certificate">證書名稱 *<br>Certificate</label>
+						<div class="blank">
+							<input type="text" name="certificate" size="50">
+						</div>
+					</div>
+					<div class="bestSubject">
+						<p>最好的五個科目 Best Five Subject</p>
+						<div class="flex">
+							<label for="firstSubject">第一科目 *<br>First Subject</label>
+							<div class="blank">
+								<div class="academic">
+									<input type="text" name="firstSubjectName" placeholder="請輸入科目名字 Please enter subject name" size="50">
+								</div>
+								<div class="academic">
+									<input type="text" name="firstSubjectGrade" placeholder="請輸入科目等級 Please enter subject grade" size="2">
+								</div>
+							</div>
+						</div>
+						<div class="flex">
+							<label for="secondSubject">第二科目 *<br>Second Subject</label>
+							<div class="blank">
+								<div class="academic">
+									<input type="text" name="secondSubjectName" placeholder="請輸入科目名字 Please enter subject name" size="50">
+								</div>
+								<div class="academic">
+									<input type="text" name="secondSubjectGrade" placeholder="請輸入科目等級 Please enter subject grade" size="	2">
+								</div>
+							</div>
+						</div>
+						<div class="flex">
+							<label for="thirdSubject">第三科目 *<br>Third Subject</label>
+							<div class="blank">
+								<div class="academic">
+									<input type="text" name="thirdSubjectName" placeholder="請輸入科目名字 Please enter subject name" size="50">
+								</div>
+								<div class="academic">
+									<input type="text" name="thirdSubjectGrade" placeholder="請輸入科目等級 Please enter subject grade" size="2">
+								</div>
+							</div>
+						</div>
+						<div class="flex">
+							<label for="fourthSubject">第四科目 *<br>Fourth Subject</label>
+							<div class="blank">
+								<div class="academic">
+									<input type="text" name="fourthSubjectName" placeholder="請輸入科目名字 Please enter subject name" size="50">
+								</div>
+								<div class="academic">
+									<input type="text" name="fourthSubjectGrade" placeholder="請輸入科目等級 Please enter subject grade" size="2">
+								</div>
+							</div>
+						</div>
+						<div class="flex">
+							<label for="fifthSubject">第五科目 *<br>Fifth Subject</label>
+							<div class="blank">
+								<div class="academic">
+									<input type="text" name="fifthSubjectName" placeholder="請輸入科目名字 Please enter subject name" size="50">
+								</div>
+								<div class="academic">
+									<input type="text" name="fifthSubjectGrade" placeholder="請輸入科目等級 Please enter subject grade" size="2">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<input type="submit" name="submit" value="submit">
+		</form>
+	</div>
+</body>
+</html>
